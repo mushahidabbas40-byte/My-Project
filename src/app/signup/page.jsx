@@ -2,6 +2,7 @@
 
 import CreateData from "@/authentication/sign";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
  
@@ -11,8 +12,9 @@ import { useState } from "react";
     const [email,Setemail]=useState("");
     const [password,Setpassword]=useState("");
    const [message, Setmessage] = useState("");
-   
-  
+   const router = useRouter()
+
+
   async function handleSubmit(e) {
     e.preventDefault();
     if (!image) {
@@ -42,7 +44,7 @@ import { useState } from "react";
         password,
         image: result.secure_url, 
       });
-
+      router.push("/login")
       Setmessage(res.error || res.success);
       
       Setimage(null);
