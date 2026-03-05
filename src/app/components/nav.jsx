@@ -10,7 +10,7 @@ export default function Navpage(){
    <div className="flex gap-[150px]">
     <Link className="hover" href="homepage">Home</Link>
     <Link href="">about</Link>
-    <Link href="">Services</Link>
+    <Link href="https://maps.apple.com/?address=Road%202403,%20Bahrain&auid=13423955028156078336&ll=26.269701,50.632903&lsp=9902&q=Bahrain%20International%20Airport&_ext=CjEKBAgEEAwKBAgFEAMKBAgGEAYKBAgKEAAKBAhSEAkKBAhVEAgKBAhZEAEKBQjBARABEiQphOv2/qtBOkAxM4IyMm1OSUA5g4WTNH9IOkBBwSeMHNhTSUA%3D">Services</Link>
    </div>
    <Link href="">Contact</Link>
    </nav>
